@@ -4,8 +4,8 @@ import styles from '../styles/SearchBar.module.css';
 function SearchBar() {
 
 return (
-        <form>
-            <input name="search" type="text" placeholder="search"></input>
+        <form className={styles.searchContainer}>
+            <input className={styles.searchBar} name="search" type="text" placeholder="search"></input>
             <button className={styles.button} name="button" type="submit">Search</button>
         </form>
     );

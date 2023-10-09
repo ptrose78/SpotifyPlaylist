@@ -6,6 +6,7 @@ function SearchResults({ searchQuery, tracks }) {
     <div>
       <h2>Search Results for "{searchQuery}"</h2>
       <Tracklist tracks={tracks} />
+      <Playlist selectedTracks={selectedTracks} />
     </div>
   );
 }

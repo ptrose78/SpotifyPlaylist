@@ -4,9 +4,14 @@ import Track from './Track';
 function Tracklist({ tracks }) {
   return (
     <div>
-      {tracks.map((track) => (
-        <Track key={track.id} trackData={track} />
-      ))}
+        <ul>
+            {tracks.map((track) => (
+                <li> 
+                    <Track key={track.id} trackData={track} />
+                    <button>+</button>
+                </li>
+            ))}
+        </ul>
     </div>
   );
 }
